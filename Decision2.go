@@ -17,18 +17,15 @@ import (
 )
 
 func main() {
+	var a int
+	fmt.Scan(&a)
+	switch {
+	case a < 999999 || a != 0 || a >= 100000:
+		b := strconv.Itoa(a)
+		fmt.Println(string(b[0]))
 
-	var p int
-	fmt.Print("Ввеите число от 1-10000: ")
-	fmt.Scan(&p)
-	if p > 10000 {
-		fmt.Println("Число должно быть меньше 10000!")
-		return
-	} else {
-
-		a := strconv.Itoa(p)
-		b := len(a)
-		fmt.Println(string(a[b-1]))
+	default:
+		fmt.Println("Число должно быть целым и не отрицательным.")
 	}
 
 }
