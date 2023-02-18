@@ -18,10 +18,10 @@ import (
 
 func main() {
 	var p int
-	fmt.Print("Ввеите число от 1-10000: ")
+	fmt.Print("Ввеите число от 1-10000:")
 	fmt.Scan(&p)
 	if p > 10000 {
-		fmt.Println("Число должно быть меньше 10000!")
+		fmt.Println("Число должно быть меньше 10000")
 		return
 	} else {
 

@@ -32,8 +32,5 @@ func main() {
 	default:
 		fmt.Println("NO")
 	}
-	//fmt.Println(f)
-	//fmt.Println(s)
-	//fmt.Println(t)
 
 }

@@ -22,7 +22,7 @@ import (
 
 func main() {
 
-	var a int32 //для экономии памяти
+	var a int32
 	fmt.Scan(&a)
 
 	switch {
