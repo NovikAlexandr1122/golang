@@ -21,7 +21,7 @@ func main() {
 	var a int
 	fmt.Scan(&a)
 	switch {
-	case a < 10000 || a != 0:
+	case a < 10000 && a != 0:
 		b := strconv.Itoa(a)
 		fmt.Println(string(b[0]))
 
