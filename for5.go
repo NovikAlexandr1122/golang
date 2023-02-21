@@ -32,10 +32,11 @@ func main() {
 		case a == max && a <= 9:
 			i++
 			//fmt.Println("1", max, i)
-		case a > max && a <= 9:
+		case a > max:
 			max = a
+			i = 1
 			//fmt.Println("2", max, i)
-		case a < max && a <= 9:
+		case a < max:
 			//fmt.Println("3", max, i)
 		}
 	}
