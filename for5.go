@@ -24,15 +24,19 @@ package main
 import "fmt"
 
 func main() {
-	var a, i int
+	var a, i, max int
+	i = 1
+	max = 0
 	for fmt.Scan(&a); a != 0; fmt.Scan(&a) {
-		b := 1
-		if a == b && a <= 9 {
-			i += a
-		}
-		if a > b && a <= 9 {
-			a = b
-			i = 1
+		switch {
+		case a == max && a <= 9:
+			i++
+			//fmt.Println("1", max, i)
+		case a > max && a <= 9:
+			max = a
+			//fmt.Println("2", max, i)
+		case a < max && a <= 9:
+			//fmt.Println("3", max, i)
 		}
 	}
 	fmt.Println(i)
