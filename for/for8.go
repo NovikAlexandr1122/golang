@@ -22,10 +22,17 @@ package main
 import "fmt"
 
 func main() {
-	var x, p, y int
+	var x, p, y, i float32
 	fmt.Scan(&x, &p, &y)
-
-	for i := 1; i > p; {
-
+	for x <= y {
+		if p == 1 {
+			x = x + (x / 100)
+			i++
+		} else {
+			x = x + (x*p)/100
+			i++
+			//fmt.Println(i)
+		}
 	}
+	fmt.Println(i)
 }
