@@ -26,9 +26,17 @@ func main() {
 		fmt.Scan(&a)
 		workArray[i] = a
 	}
-	// for c := 0; c < 2; c++ {
-	// 	fmt.Scan(&a)
-	// 	workArray[c] = a
-	// }
+	for c := 0; c < 3; c++ {
+		var b, t int
+		fmt.Scan(&b, &t)
+		//fmt.Println(t)
+
+		workArray[b], workArray[t] = workArray[t], workArray[b]
+
+	}
+	for i := 0; i < len(workArray); i++ {
+		fmt.Printf("%d ", workArray[i])
+	}
+	fmt.Printf("type ok")
 
 }
