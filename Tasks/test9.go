@@ -29,6 +29,4 @@ func main() {
 		}
 	}
 	fmt.Printf("%d", result)
-
-	//fmt.Printf("%d", result)
 }
