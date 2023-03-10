@@ -1,3 +1,5 @@
+// не законченный пример
+
 package main
 
 type testStruct struct {

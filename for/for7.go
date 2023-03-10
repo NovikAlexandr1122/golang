@@ -23,7 +23,7 @@ func main() {
 	var a int
 	for fmt.Scan(&a); a <= 100; fmt.Scan(&a) {
 		switch {
-		case a <= 100 && a >= 10:
+		case a <= 100 && a >= 10: //
 			fmt.Println(a)
 			continue
 		case a < 10:
